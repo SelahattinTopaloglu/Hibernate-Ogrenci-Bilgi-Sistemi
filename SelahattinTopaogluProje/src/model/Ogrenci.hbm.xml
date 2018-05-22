@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19.May.2018 18:17:10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Ogrenci" table="ogrenci" catalog="obs" optimistic-lock="version">
+        <id name="ogrenciid" type="java.lang.Integer">
+            <column name="ogrenciid" />
+            <generator class="identity" />
+        </id>
+        <property name="ogrencino" type="string">
+            <column name="ogrencino" length="10" />
+        </property>
+        <property name="adsoyad" type="string">
+            <column name="adsoyad" length="45" />
+        </property>
+        <property name="sehir" type="string">
+            <column name="sehir" length="30" />
+        </property>
+        <property name="telno" type="string">
+            <column name="telno" length="11" />
+        </property>
+    </class>
+</hibernate-mapping>
